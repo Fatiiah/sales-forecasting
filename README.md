@@ -1,1 +1,1 @@
-# sales-forecasting-time_series-
+# sales-forecasting (time series)
