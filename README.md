@@ -17,7 +17,7 @@ Retailers need to know roughly how much they'll sell in the coming weeks to plan
 | **Random Forest (best)** | **669** | **994** | **0.894** |
 | Gradient Boosting | 699 | 1,035 | 0.885 |
 
-The best model predicts within about **9-10% of average daily sales**, and clearly beats a strong baseline — this isn't just fitting to an average, it's picking up real, useful signal.
+The best model predicts within about **9-10% of average daily sales**, and clearly beats a strong baseline this isn't just fitting to an average, it's picking up real, useful signal.
 
 ## What drives sales, based on the data
 
@@ -28,12 +28,12 @@ The best model predicts within about **9-10% of average daily sales**, and clear
 
 ## A note on model size
 
-The originally benchmarked model (100 trees, depth 15) came out at 242MB — too big for GitHub. I swapped to a leaner version (50 trees, depth 10) that's 99% smaller (2.5MB) for a barely-there drop in accuracy (R² 0.894 → 0.887). Worth it.
+The originally benchmarked model (100 trees, depth 15) came out at 242MB too big for GitHub. I swapped to a leaner version (50 trees, depth 10) that's 99% smaller (2.5MB) for a barely-there drop in accuracy (R² 0.894 → 0.887). Worth it.
 
 ## Limitations
 
 - Forecasts a fixed 6-week horizon; a real production system would need to handle rolling forecasts and refresh features as new data comes in
-- Competition distance turned out to be a weak predictor — competitor pricing or promo activity (not in this dataset) might matter more than raw distance
+- Competition distance turned out to be a weak predictor competitor pricing or promo activity (not in this dataset) might matter more than raw distance
 
 ## What's next
 
